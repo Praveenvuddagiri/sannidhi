@@ -18,13 +18,13 @@ const navbarData = {
 }
 
 
-const heroSectionData = {
-  image: "https://res.cloudinary.com/dag",
-  title: "titleText",
-  heading: "headingText",
-  description: "descriptionText",
-  button: "Login"
-}
+    const heroSectionData = {
+      imageUrl:"https://res.cloudinary.com/dagmm478n/image/upload/v1700833360/INA%20SANNIDI/Group_1000001900_zibnxf.png",
+      title: "titleText",
+      heading: "headingText",
+      description: "descriptionText",
+      button: "Login"
+    }
 
 const handleButtonClick = () => {
 
