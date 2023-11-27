@@ -20,10 +20,10 @@ const navbarData = {
 
     const heroSectionData = {
       imageUrl:"https://res.cloudinary.com/dagmm478n/image/upload/v1700833360/INA%20SANNIDI/Group_1000001900_zibnxf.png",
-      title: "titleText",
-      heading: "headingText",
-      description: "descriptionText",
-      button: "Login"
+      title: "3 Bed - 2 Bath - 2200 Sq Ft",
+      heading: "Luxurious Living Redefined",
+      description: "Welcome to your dream home at Sannidhi Group, where elegance meets modern comfort. This stunning property redefines the art of sophisticated living",
+      button: "View Property"
     }
 
 const handleButtonClick = () => {
