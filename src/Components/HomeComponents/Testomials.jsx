@@ -11,13 +11,13 @@ import 'swiper/css/navigation';
 const Testimonial = ({ title, list }) => {
 
   return (
-    <div className="swiper-container">
+    <div className="swiper-container mt-10 mb-10">
       <div className="swiper-wrapper">
         <div className="swiper-slide">
 
-          <div className="flex flex-col min-h-screen items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <h2 className='text-center text-4xl text-[#3A7CBA]'>{title}</h2>
-            <div className='bg-gradient-to-r from-transparent via-[#B82A26] to-transparent h-1 w-36 mt-1 mb-12'></div>
+            <div className='bg-gradient-to-r from-transparent via-[#B82A26] to-transparent h-1 w-36 mt-1 mb-5'></div>
             <Swiper
               slidesPerView={'auto'}
               centeredSlides={true}

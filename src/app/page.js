@@ -157,8 +157,6 @@ export default function Home() {
       />
       <Projects projects={projectsProps.projects} title={projectsProps.title} />
       <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
-
-      <Projects projects={projectsProps.projects} title={projectsProps.title} />
       <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
       <VideoSection
         image={VideoSectionData.imageUrl}

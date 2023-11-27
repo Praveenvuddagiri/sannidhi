@@ -3,7 +3,7 @@ import React from 'react'
 
 const AboutUsCard = ({ title, image, head, content, list }) => {
     return (
-        <div className='flex justify-center items-center mt-5 pt-10 mb-10 bg-[#3A7CBA] bg-opacity-[11%] pb-10'>
+        <div className='flex justify-center items-center mt-5 pt-10 bg-[#3A7CBA] bg-opacity-[11%] pb-10'>
             <div className=' w-[80%]'>
                 <div className='flex flex-col justify-center items-center '>
                     <h2 className='text-4xl text-[#3A7CBA]'>{title}</h2>

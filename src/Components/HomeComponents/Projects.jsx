@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 const Projects = ({ title, projects }) => {
 
     return (
-        <div className='flex justify-center items-center mt-10 mb-10'>
+        <div className='flex justify-center items-center mt-10'>
             <div className=' w-[80%]'>
                 <div className='flex flex-col justify-center items-center '>
                     <h2 className='text-4xl text-[#3A7CBA]'>{title}</h2>
