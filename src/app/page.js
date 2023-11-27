@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
-import Navbar from '@/Components/Navbar'
-import HeroSection from '@/Components/HeroSection';
+import Navbar from '@/Components/CommonComponents/Navbar'
+import HeroSection from '@/Components/HomeComponents/HeroSection';
 
 
 
