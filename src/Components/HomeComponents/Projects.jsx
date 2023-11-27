@@ -8,7 +8,7 @@ const Projects = ({ title, projects }) => {
             <div className=' w-[80%]'>
                 <div className='flex flex-col justify-center items-center '>
                     <h2 className='text-4xl text-[#3A7CBA]'>{title}</h2>
-                    <div className='bg-gradient-to-r from-transparent via-[#B82A26] to-transparent h-1 w-36 mt-1'></div>
+                    <div className='bg-gradient-to-r from-transparent via-[#B82A26] to-transparent h-0.5 w-36 mt-1'></div>
                     <div className='flex justify-between gap-10 mt-6 flex-col lg:flex-row'>
                         {
                             projects.map((project, index) => (
