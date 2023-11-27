@@ -2,6 +2,7 @@
 import React from 'react'
 import Navbar from '@/Components/CommonComponents/Navbar'
 import HeroSection from '@/Components/HomeComponents/HeroSection';
+import Projects from '@/Components/HomeComponents/Projects';
 
 
 
@@ -31,13 +32,32 @@ const handleButtonHeroButtonClick = () => {
   console.log("Button clicked!");
 }
 
-const data = 
-  {
-    image: "",
-    title: "upcoming products"
-  }
 
- 
+
+const projectsProps = {
+  title: 'Projects',
+  projects: [
+    {
+      image: '/images/project1.png',
+      title: 'Ongoing Projects'
+    },
+    {
+      image: '/images/project1.png',
+      title: 'Upcoming Projects'
+    },
+    {
+      image: '/images/project1.png',
+      title: 'Completed Projects'
+    },
+  ]
+}
+const data =
+{
+  image: "",
+  title: "upcoming products"
+}
+
+
 
 
 export default function Home() {
@@ -50,10 +70,10 @@ export default function Home() {
         heading={heroSectionData.heading}
         description={heroSectionData.description}
         buttonLabel={heroSectionData.button}
-        
+
       />
 
-
+      <Projects projects={projectsProps.projects} title={projectsProps.title} />
 
     </div>
   )
