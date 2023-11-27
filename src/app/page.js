@@ -1,45 +1,44 @@
 'use client'
 import React from 'react'
-import Navbar from '@/Components/Navbar'
-import HeroSection from '@/Components/HeroSection';
-import Projects from '@/Components/Projects';
-import Video from '@/Components/video';
+import Navbar from '@/Components/CommonComponents/Navbar'
+import HeroSection from '@/Components/HomeComponents/HeroSection';
 
 
 
-  const navbarData = {
-    logo:"https://res.cloudinary.com/dagmm478n/image/upload/v1699608917/INA%20SANNIDI/Group-1_jjr80d.png",
-    links: [
-      { url: '/', text: 'Home' },
-      { url: '/about', text: 'About' },
-      { url: '/ongoing', text: 'Ongoing' },
-      { url: '/upcoming', text: 'Upcoming' },
-      { url: '/completed', text: 'Completed' }
-      
-    ]  }
+const navbarData = {
+  logo: "https://res.cloudinary.com/dagmm478n/image/upload/v1699608917/INA%20SANNIDI/Group-1_jjr80d.png",
+  links: [
+    { url: '/', text: 'Home' },
+    { url: '/about', text: 'About' },
+    { url: '/ongoing', text: 'Ongoing' },
+    { url: '/upcoming', text: 'Upcoming' },
+    { url: '/completed', text: 'Completed' }
+
+  ]
+}
 
 
     const heroSectionData = {
-      image:"https://res.cloudinary.com/dag",
+      imageUrl:"https://res.cloudinary.com/dagmm478n/image/upload/v1700833360/INA%20SANNIDI/Group_1000001900_zibnxf.png",
       title: "titleText",
       heading: "headingText",
       description: "descriptionText",
       button: "Login"
     }
-   
-  const handleButtonClick = () => {
-    
-    console.log('Button clicked!');
-  };
 
-  const handleButtonHeroButtonClick = () => {
-   console.log("Button clicked!");
-  }
+const handleButtonClick = () => {
+
+  console.log('Button clicked!');
+};
+
+const handleButtonHeroButtonClick = () => {
+  console.log("Button clicked!");
+}
 
 const data = 
   {
-      image:"https://res.cloudinary.com/dagmm478n/image/upload/v1700832675/INA%20SANNIDI/WhatsApp_Image_2023-11-24_at_6.59.57_PM_tc3crp.jpg",
-      title:"Ongoing Products"
+    image: "",
+    title: "upcoming products"
   }
 
  
@@ -49,7 +48,7 @@ export default function Home() {
   return (
     <div>
       <Navbar logoSrc={navbarData.logo} navLinks={navbarData.links} buttonLabel="Contact Us" onButtonClick={handleButtonClick} />
-        <HeroSection
+      <HeroSection
         image={heroSectionData.imageUrl}
         title={heroSectionData.title}
         heading={heroSectionData.heading}
@@ -58,12 +57,9 @@ export default function Home() {
         onButtonClick={handleButtonHeroButtonClick}
         
       />
-      <Projects image={data.image} title={data.title}/>
-      {/* <Video image={data.image} title={data.title}/> */}
 
 
-  
-    
+
     </div>
   )
 }
