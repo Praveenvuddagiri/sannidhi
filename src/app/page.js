@@ -32,7 +32,7 @@ const heroSectionData = {
   button: "View Property"
 }
 
-   
+
 
 
 const handleButtonClick = () => {
@@ -44,11 +44,11 @@ const handleButtonHeroButtonClick = () => {
   console.log("Button clicked!");
 }
 
-const data = 
-  {
-    image: "https://res.cloudinary.com/dagmm478n/image/upload/v1700832675/INA%20SANNIDI/WhatsApp_Image_2023-11-24_at_6.59.57_PM_tc3crp.jpg",
-    title: "upcoming products"
-  }
+const data =
+{
+  image: "https://res.cloudinary.com/dagmm478n/image/upload/v1700832675/INA%20SANNIDI/WhatsApp_Image_2023-11-24_at_6.59.57_PM_tc3crp.jpg",
+  title: "upcoming products"
+}
 
  const VideoSectionData  =
  {
@@ -108,7 +108,32 @@ const aboutProps = {
 }
 
 
+const testomialsCardData = {
+  title: "Testimonials",
+  list: [
+    {
+      name: "ADMIN",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      position: "Head",
+      image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701070066/INA%20SANNIDI/Image_y1hljv.png"
+    },
 
+    {
+      name: "ADMIN",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      position: "Head",
+      image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701070066/INA%20SANNIDI/Image_y1hljv.png"
+    },
+
+    {
+      name: "ADMIN",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      position: "Head",
+      image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701070066/INA%20SANNIDI/Image_y1hljv.png"
+    },
+
+  ]
+}
 
 
 const CtaButtonData =
@@ -131,10 +156,10 @@ export default function Home() {
         buttonLabel={heroSectionData.button}
 
       />
-    <Projects projects={projectsProps.projects} title={projectsProps.title} />
-    <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
-    <Testimonial/>
-    <VideoSection
+      <Projects projects={projectsProps.projects} title={projectsProps.title} />
+      <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
+      <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
+      <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}
         description={VideoSectionData.description}
@@ -143,22 +168,15 @@ export default function Home() {
         image2={VideoSectionData.imageUrl2}
         
       />
-     <CtaButton
+      <CtaButton
         heading={CtaButtonData.heading}
         title={CtaButtonData.title}
         description={CtaButtonData.description}
         buttonLabel={CtaButtonData.button}
         onButtonClick={handleButtonHeroButtonClick}
-        
+
       />
-   <Footer/>
-    
-
-
-      
-
-     
-
+      <Footer />
     </div>
   )
 }
