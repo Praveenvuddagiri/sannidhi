@@ -26,10 +26,6 @@ const navbarData = {
       button: "Login"
     }
 
-const handleButtonClick = () => {
-
-  console.log('Button clicked!');
-};
 
 const handleButtonHeroButtonClick = () => {
   console.log("Button clicked!");
@@ -47,14 +43,13 @@ const data =
 export default function Home() {
   return (
     <div>
-      <Navbar logoSrc={navbarData.logo} navLinks={navbarData.links} buttonLabel="Contact Us" onButtonClick={handleButtonClick} />
+      <Navbar logoSrc={navbarData.logo} navLinks={navbarData.links} buttonLabel="Contact Us" buttonLink="/contact" />
       <HeroSection
         image={heroSectionData.imageUrl}
         title={heroSectionData.title}
         heading={heroSectionData.heading}
         description={heroSectionData.description}
         buttonLabel={heroSectionData.button}
-        onButtonClick={handleButtonHeroButtonClick}
         
       />
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 
-const Navbar = ({ logoSrc, navLinks, buttonLabel, onButtonClick }) => {
+const Navbar = ({ logoSrc, navLinks, buttonLabel, buttonLink }) => {
 
 
   return (
@@ -33,14 +33,13 @@ const Navbar = ({ logoSrc, navLinks, buttonLabel, onButtonClick }) => {
               ))}
 
             <div className="w-fit">
-              {buttonLabel && onButtonClick && (
+              <Link href={buttonLink}>
                 <button
-                  onClick={onButtonClick}
                   className="text-[#3A7CBA] text-[18px] font-[600] px-6 py-2 rounded-sm border border-blue-500 w-fit"
                 >
                   {buttonLabel}
                 </button>
-              )}
+              </Link>
             </div>
           </ul>
 
