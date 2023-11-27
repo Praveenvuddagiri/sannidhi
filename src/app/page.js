@@ -52,11 +52,12 @@ const data =
 
  const VideoSectionData  =
  {
-  imageUrl:"https://res.cloudinary.com/dagmm478n/image/upload/v1700833360/INA%20SANNIDI/Group_1000001900_zibnxf.png",
+  imageUrl:"https://res.cloudinary.com/dagmm478n/image/upload/v1701079923/INA%20SANNIDI/551f83a9e1db1fd415e872f79c49d69b_dzft4l.png",
   title: "Take a short tour on our Venturest",
   // heading: "headingText",
   description: "Welcome to your dream home at Sannidhi Group, where elegance meets modern comfort. This stunning property redefines the art of sophisticated living",
-  button: "Login"
+  // button: "Login"
+  imageUrl2:"https://res.cloudinary.com/dagmm478n/image/upload/v1701080357/INA%20SANNIDI/Group_1000001835_hv6sae.svg",
 }
 
 
@@ -137,8 +138,9 @@ export default function Home() {
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}
         description={VideoSectionData.description}
-        buttonLabel={VideoSectionData.button}
-        onButtonClick={handleButtonHeroButtonClick}
+        // buttonLabel={VideoSectionData.button}
+        // onButtonClick={handleButtonHeroButtonClick}
+        image2={VideoSectionData.imageUrl2}
         
       />
      <CtaButton
