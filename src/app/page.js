@@ -2,6 +2,8 @@
 import React from 'react'
 import Navbar from '@/Components/Navbar'
 import HeroSection from '@/Components/HeroSection';
+import Projects from '@/Components/Projects';
+import Video from '@/Components/video';
 
 
 
@@ -24,7 +26,7 @@ import HeroSection from '@/Components/HeroSection';
       description: "descriptionText",
       button: "Login"
     }
-
+   
   const handleButtonClick = () => {
     
     console.log('Button clicked!');
@@ -34,12 +36,14 @@ import HeroSection from '@/Components/HeroSection';
    console.log("Button clicked!");
   }
 
-const data = [
+const data = 
   {
-      image:"",
-      title:"upcoming products"
+      image:"https://res.cloudinary.com/dagmm478n/image/upload/v1700832675/INA%20SANNIDI/WhatsApp_Image_2023-11-24_at_6.59.57_PM_tc3crp.jpg",
+      title:"Ongoing Products"
   }
-]
+
+ 
+
 
 export default function Home() {
   return (
@@ -52,8 +56,12 @@ export default function Home() {
         description={heroSectionData.description}
         buttonLabel={heroSectionData.button}
         onButtonClick={handleButtonHeroButtonClick}
+        
       />
-      
+      <Projects image={data.image} title={data.title}/>
+      {/* <Video image={data.image} title={data.title}/> */}
+
+
   
     
     </div>
