@@ -35,12 +35,14 @@ const handleButtonHeroButtonClick = () => {
   console.log("Button clicked!");
 }
 
-const data = [
+const data = 
   {
     image: "",
     title: "upcoming products"
   }
-]
+
+ 
+
 
 export default function Home() {
   return (
@@ -53,6 +55,7 @@ export default function Home() {
         description={heroSectionData.description}
         buttonLabel={heroSectionData.button}
         onButtonClick={handleButtonHeroButtonClick}
+        
       />
 
 
