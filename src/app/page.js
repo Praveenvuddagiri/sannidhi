@@ -1,9 +1,11 @@
-import Image from 'next/image'
+import Paper from '@/Components/Atoms/Paper'
 
 export default function Home() {
   return (
     <div>
-      <h1>Hello World!</h1> 
+      <Paper padding={10} width={10} margin={10} >
+        <h1>Hello</h1>
+      </Paper>
     </div>
   )
 }
