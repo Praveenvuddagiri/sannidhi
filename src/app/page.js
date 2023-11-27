@@ -3,6 +3,8 @@ import React from 'react'
 import Navbar from '@/Components/CommonComponents/Navbar'
 import HeroSection from '@/Components/HomeComponents/HeroSection';
 import Projects from '@/Components/HomeComponents/Projects';
+import CardComponent from '@/Components/HomeComponents/TestimonialsCard';
+import Testimonial from '@/Components/HomeComponents/Testomials';
 
 
 
@@ -38,15 +40,15 @@ const projectsProps = {
   title: 'Projects',
   projects: [
     {
-      image: '/images/project1.png',
+      image: 'https://res.cloudinary.com/dagmm478n/image/upload/v1701069152/INA%20SANNIDI/741685cc556a8c5f4159180ae88b1d6c_afon3i.png',
       title: 'Ongoing Projects'
     },
     {
-      image: '/images/project1.png',
+      image: 'https://res.cloudinary.com/dagmm478n/image/upload/v1701069183/INA%20SANNIDI/a173c99195131a634f653e1d35ead7c8_lklfey.png',
       title: 'Upcoming Projects'
     },
     {
-      image: '/images/project1.png',
+      image: 'https://res.cloudinary.com/dagmm478n/image/upload/v1701069213/INA%20SANNIDI/49673957e85c0ea743780100fb41b7f9_n3q8yu.png',
       title: 'Completed Projects'
     },
   ]
@@ -56,6 +58,7 @@ const data =
   image: "",
   title: "upcoming products"
 }
+
 
 
 
@@ -74,6 +77,7 @@ export default function Home() {
       />
 
       <Projects projects={projectsProps.projects} title={projectsProps.title} />
+      <Testimonial/>
 
     </div>
   )
