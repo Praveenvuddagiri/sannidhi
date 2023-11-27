@@ -130,7 +130,9 @@ export default function Home() {
         buttonLabel={heroSectionData.button}
 
       />
-    <Projects image={data.image} title={data.title}/> 
+    <Projects projects={projectsProps.projects} title={projectsProps.title} />
+    <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
+    <Testimonial/>
     <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}
@@ -150,10 +152,10 @@ export default function Home() {
    <Footer/>
     
 
-      <Projects projects={projectsProps.projects} title={projectsProps.title} />
-      <Testimonial/>
 
-      <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
+      
+
+     
 
     </div>
   )
