@@ -1,23 +1,25 @@
-import Image from 'next/image'
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
+const Projects = ({ title, projects }) => {
 
-
-const Projects = ({ image, title }) => {
-  return (
-    <div>
-      <h2>Project</h2>
-      <div className="flex items-center justify-start h-screen ml-8">
-        <div className="bg-blue-100 bg-opacity-75 rounded-[30px] w-[425px] h-[312px] p-8 text-[#192839]  font-semibold">
-          <Image src={image} height={450} width={500} className="rounded-[30px] mx-auto" />
-          <p className="text-center mt-4 text-[#192839] font-semibold text-lg">{title}</p>
+    return (
+        <div className='flex justify-center items-center mt-10 mb-10'>
+            <div className=' w-[80%]'>
+                <div className='flex flex-col justify-center items-center '>
+                    <h2 className='text-4xl text-[#3A7CBA]'>{title}</h2>
+                    <div className='bg-gradient-to-r from-transparent via-[#B82A26] to-transparent h-0.5 w-36 mt-1'></div>
+                    <div className='flex justify-between gap-10 mt-6 flex-col lg:flex-row'>
+                        {
+                            projects.map((project, index) => (
+                                <ProjectCard key={index} image={project.image} title={project.title} />
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-
-    </div>
-
-  )
+    )
 }
 
 export default Projects
