@@ -8,9 +8,9 @@ const Navbar = ({ logoSrc, navLinks, buttonLabel, buttonLink }) => {
 
 
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex justify-center items-center ">
       <nav className="flex justify-evenly w-full">
-        <div className="flex items-center justify-between py-5 bg-white text-[#333] w-[92%]">
+        <div className="flex items-center justify-between py-5 bg-white text-[#333] w-[93%]">
 
           <Link href="/">
             <Image

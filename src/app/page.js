@@ -5,9 +5,11 @@ import HeroSection from '@/Components/HomeComponents/HeroSection';
 import Projects from '@/Components/HomeComponents/Projects';
 import VideoSection from '@/Components/VideoSection';
 import CtaButton from '@/Components/CtaButton';
-import Footer from '@/Components/Footer';
+import Footer from '@/Components/CommonComponents/Footer';
 import AboutUsCard from '@/Components/HomeComponents/AboutUsCard';
 import Testimonial from '@/Components/HomeComponents/Testomials';
+import HeaderCard from '@/Components/CommonComponents/HeaderCard';
+import AboutusSection from '@/Components/AboutusComponents/AboutusSection';
 
 
 
@@ -144,6 +146,11 @@ const CtaButtonData =
   button: "Discover More",
 }
 
+
+
+
+
+
 export default function Home() {
   return (
     <div>
@@ -176,7 +183,11 @@ export default function Home() {
         onButtonClick={handleButtonHeroButtonClick}
 
       />
+      
       <Footer />
+
+     
+
     </div>
   )
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const HeroSection = ({ image, image2, title, heading, description, onButtonClick, buttonLabel }) => {
+const VideoSection = ({ image, image2, title, heading, description, onButtonClick, buttonLabel }) => {
   return (
     <div className="relative">
       <div className="flex flex-col items-center justify-center h-[30%]">
@@ -44,4 +44,4 @@ const HeroSection = ({ image, image2, title, heading, description, onButtonClick
   );
 };
 
-export default HeroSection;
+export default VideoSection;
