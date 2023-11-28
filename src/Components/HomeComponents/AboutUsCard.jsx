@@ -23,7 +23,7 @@ const AboutUsCard = ({ title, image, head, content, list }) => {
                                     list?.map((item, index) => {
                                         return (
                                             <div key={index} className='flex justify-center items-center gap-3'>
-                                                <div className='bg-[#3A7CBA] bg-opacity-[18%] flex justify-center items-center p-6 rounded-md'>
+                                                <div className='bg-[#3A7CBA] bg-opacity-[18%] flex justify-center items-center p-6 rounded-md mb-3'>
                                                     <Image src={item.image} alt={item.title} width={70} height={70} className='' />
                                                 </div>
                                                 <div>

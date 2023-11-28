@@ -8,7 +8,7 @@ const AboutusSection = ({ title, image, head, content}) => {
         {/* Left side (image) */}
         <div className="col-span-1 ">
           <div className="bg-[#FEFEFF] flex justify-end relative">
-            <div className="absolute bg-[#FEFEFF] z-10 text-center p-4 shadow-2xl -top-6 right-6">
+            <div className="absolute bg-[#FEFEFF] z-10 text-center p-4 shadow-2xl -top-10 right-6">
               <div className="flex justify-center items-center">
                 <Image
                   src="https://res.cloudinary.com/dagmm478n/image/upload/v1701154893/INA%20SANNIDI/d279fb41524e7cab4bdffe459979f72e_wadyp1.png"
