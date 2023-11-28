@@ -4,11 +4,8 @@ import React from "react";
 
 const HeaderCard = ({
     image,
-    title,
-    heading,
-    description,
-    buttonLabel,
-    onButtonClick,
+    heading
+   
 }) => {
     return (
         <div className="relative">
@@ -16,7 +13,7 @@ const HeaderCard = ({
             <Image
               src={image}
               alt="Hero Image"
-              className="w-full h-full"
+              className="w-full h-full object-fill"
               width={700}
               height={700}
             />

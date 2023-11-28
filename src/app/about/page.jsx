@@ -1,3 +1,4 @@
+import AboutContent from '@/Components/AboutusComponents/AboutContent'
 import AboutusSection from '@/Components/AboutusComponents/AboutusSection'
 import Footer from '@/Components/CommonComponents/Footer'
 import HeaderCard from '@/Components/CommonComponents/HeaderCard'
@@ -111,6 +112,7 @@ const page = () => {
     />
       <AboutusSection title={AboutusSectionProps.title} image={AboutusSectionProps.image} list={AboutusSectionProps.list} head={AboutusSectionProps.head} content={AboutusSectionProps.content} />
       {/* <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} /> */}
+      <AboutContent/>
       <TestimonialSwiper />
       <VideoSection
         image={VideoSectionData.imageUrl}

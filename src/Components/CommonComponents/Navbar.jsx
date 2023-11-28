@@ -33,7 +33,7 @@ const Navbar = ({ logoSrc, navLinks, buttonLabel, buttonLink }) => {
               ))}
 
             <div className="w-fit">
-              <Link href={buttonLink}>
+              <Link href="/contact">
                 <button
                   className="text-[#3A7CBA] text-[18px] font-[600] px-6 py-2 rounded-sm border border-blue-500 w-fit"
                 >
