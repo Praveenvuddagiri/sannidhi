@@ -23,7 +23,7 @@ const Footer = () => {
                     </div>
 
                     {/* Quick Links Section */}
-                    <div className="col-lg- 3 ccol-md-12 md:col-span-1 lg:col-span-1 mb-6 mt-9">
+                    <div className="col-lg- 3 col-span-3col-md-12 md:col-span-1 lg:col-span-1 mb-6 mt-9">
                         <div className="footer-linksbg-black bg-opacity-[90%] p-4 rounded-md">
                             <h4 className="text-red-500 mb-4">Quick Links</h4>
                             <ul className="text-white leading-[25px]">

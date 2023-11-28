@@ -1,10 +1,11 @@
+"use client"
 import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import CardComponent from './TestimonialsCard';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+// import 'swiper/css/navigation';
 
 
 
@@ -29,7 +30,7 @@ const Testimonial = ({ title, list }) => {
                 delay: 2500,
                 disableOnInteraction: false,
               }}
-              modules={[Pagination, Navigation, Autoplay]}
+              modules={[Pagination,  Autoplay]}
               navigation={true}
               className="mySwiper"
             >
