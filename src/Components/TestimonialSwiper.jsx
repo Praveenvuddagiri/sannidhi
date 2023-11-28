@@ -15,6 +15,7 @@ const TestimonialSwiper = () => {
       centeredSlides={true}
       slidesPerView={3}
       pagination={true}
+      loop={true}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,
