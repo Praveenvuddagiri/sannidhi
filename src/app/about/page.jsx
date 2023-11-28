@@ -2,12 +2,14 @@ import AboutusSection from '@/Components/AboutusComponents/AboutusSection'
 import Footer from '@/Components/CommonComponents/Footer'
 import HeaderCard from '@/Components/CommonComponents/HeaderCard'
 import Navbar from '@/Components/CommonComponents/Navbar'
-import CtaButton from '@/Components/CtaButton'
+import CtaButton from '@/Components/HomeComponents/CtaButton'
+// import CtaButton from '@/Components/CtaButton'
 import CardComponent from '@/Components/HomeComponents/TestimonialsCard'
 import Testimonial from '@/Components/HomeComponents/Testomials'
+import VideoSection from '@/Components/HomeComponents/VideoSection'
 import CardsComponent from '@/Components/OngoingComponents/Cards'
 import OngoingProject from '@/Components/OngoingComponents/OngoingProject'
-import VideoSection from '@/Components/VideoSection'
+// import VideoSection from '@/Components/VideoSection'
 import React from 'react'
 
 const navbarData = {
@@ -111,7 +113,7 @@ const page = () => {
         // onButtonClick={handleButtonHeroButtonClick}
 
       />
-      <OngoingProject/>
+      
       
       <Footer />
     </div>

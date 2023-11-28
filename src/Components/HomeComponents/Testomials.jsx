@@ -20,24 +20,24 @@ const Testimonial = ({ title, list }) => {
             <h2 className='text-center text-4xl text-[#3A7CBA]'>{title}</h2>
             <div className='bg-[#B82A26] h-[3px] w-36 mt-1 mb-5'></div>
             <Swiper
-              slidesPerView={'auto'}
-              centeredSlides={true}
-              spaceBetween={30}
+              // centeredSlides={true}
+              slidesPerView={"3"}
+              // spaceBetween={30}
               pagination={{
                 clickable: true,
               }}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-              }}
-              modules={[Pagination,  Autoplay]}
+              // autoplay={{
+              //   delay: 2500,
+              //   disableOnInteraction: false,
+              // }}
+              modules={[Pagination]}
               navigation={true}
               className="mySwiper"
             >
               {
-                list?.map((testomialsCardData) =>
+                list?.map((testomialsCardData, index) =>
 
-                  <SwiperSlide>
+                  <SwiperSlide key={index}>
                     <div className='m-10'>
 
                       <CardComponent
