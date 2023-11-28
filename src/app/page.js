@@ -3,8 +3,8 @@ import React from 'react'
 import Navbar from '@/Components/CommonComponents/Navbar'
 import HeroSection from '@/Components/HomeComponents/HeroSection';
 import Projects from '@/Components/HomeComponents/Projects';
-import VideoSection from '@/Components/VideoSection';
-import CtaButton from '@/Components/CtaButton';
+import VideoSection from '@/Components/HomeComponents/VideoSection';
+import CtaButton from '@/Components/HomeComponents/CtaButton';
 import Footer from '@/Components/CommonComponents/Footer';
 import AboutUsCard from '@/Components/HomeComponents/AboutUsCard';
 import Testimonial from '@/Components/HomeComponents/Testomials';
