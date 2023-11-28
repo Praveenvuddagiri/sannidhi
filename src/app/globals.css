@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-slide.swiper-slide-prev,  .swiper-slide.swiper-slide-next{
+    position: relative;
+}
+
+.swiper-slide.swiper-slide-active {
+    position: relative;
+    width: 100%;
+}
+
+.swiper-slide.swiper-slide-prev::after, .swiper-slide.swiper-slide-next::after {
+    position: absolute;
+    content: '';
+    background: rgba(0, 128, 0, 0.166);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}

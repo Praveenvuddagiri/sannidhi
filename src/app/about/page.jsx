@@ -9,6 +9,7 @@ import Testimonial from '@/Components/HomeComponents/Testomials'
 import VideoSection from '@/Components/HomeComponents/VideoSection'
 import CardsComponent from '@/Components/OngoingComponents/Cards'
 import OngoingProject from '@/Components/OngoingComponents/OngoingProject'
+import TestimonialSwiper from '@/Components/TestimonialSwiper'
 // import VideoSection from '@/Components/VideoSection'
 import React from 'react'
 
@@ -32,9 +33,23 @@ const AboutusSectionProps = {
   content: "What sets them apart is their adept and experienced team, who expertly manage every aspect of their projects. With an unwavering commitment to quality, Sannidhi Group has consistently delivered impressive results. Their enduring presence in the real estate sector is a testament to their dedication and reliability. They have transformed landscapes and provided countless individuals and families with exceptional living spaces, contributing significantly to the growth and development of the regions they operate in. Every project stands out from the others at every site because to an attitude of quality and polished aesthetic sensibility. Authenticity and integrity in dealing with consumers, as well as devotion and dedication, have established us as a recognizable name in the Real Estate industry.",
 }
 
-const testomialsCardData = {
+export const testomialsCardData = {
   title: "Testimonials",
   list: [
+    {
+      name: "ADMIN",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      position: "Head",
+      image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701070066/INA%20SANNIDI/Image_y1hljv.png"
+    },
+
+    {
+      name: "ADMIN",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      position: "Head",
+      image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701070066/INA%20SANNIDI/Image_y1hljv.png"
+    },
+
     {
       name: "ADMIN",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -95,7 +110,8 @@ const page = () => {
     image={HeaderCardData.image}
     />
       <AboutusSection title={AboutusSectionProps.title} image={AboutusSectionProps.image} list={AboutusSectionProps.list} head={AboutusSectionProps.head} content={AboutusSectionProps.content} />
-      <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
+      {/* <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} /> */}
+      <TestimonialSwiper />
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}
