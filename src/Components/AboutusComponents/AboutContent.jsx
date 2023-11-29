@@ -4,7 +4,7 @@ import React from "react";
 const AboutContent = () => {
   return (
     <div>
-      <div className="flex justify-center items-center mt-5 bg-opacity-[11%] bg-[#B3CEEB] p-20 mb-10">
+      <div className="flex justify-center items-center mt-5 bg-opacity-[11%] bg-[#B3CEEB] p-20 mb-10 ">
         <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-10 h-[60%]">
           {/* Left side (image) */}
           <div className="col-span-1 p-20">
