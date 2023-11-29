@@ -111,9 +111,10 @@ const page = () => {
     image={HeaderCardData.image}
     />
       <AboutusSection title={AboutusSectionProps.title} image={AboutusSectionProps.image} list={AboutusSectionProps.list} head={AboutusSectionProps.head} content={AboutusSectionProps.content} />
-      {/* <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} /> */}
+      
       <AboutContent/>
-      <TestimonialSwiper />
+      {/* <TestimonialSwiper /> */}
+      <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}
