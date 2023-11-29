@@ -2,16 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-.swiper-slide.swiper-slide-prev,  .swiper-slide.swiper-slide-next{
+.swiper {
+    height: 600px;
+}
+
+.swiper-slide.swiper-slide-prev > div,  .swiper-slide.swiper-slide-next > div{
     position: relative;
+    height: 80%;
+    /* top: 30%; */
 }
 
 .swiper-slide.swiper-slide-active {
     position: relative;
     width: 100%;
+    height: 100%;
+    transform: scale(1.5) !important;
+    z-index: 2;
+    top: 30%;
 }
 
-.swiper-slide.swiper-slide-prev::after, .swiper-slide.swiper-slide-next::after {
+.swiper-slide.swiper-slide-prev > div::after, .swiper-slide.swiper-slide-next > div::after {
     position: absolute;
     content: '';
     background: rgba(0, 128, 0, 0.166);

@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutusSection = ({ title, image, head, content}) => {
   return (
-    <div className="flex justify-center items-center mt-5 pt-10 bg-opacity-[11%] pb-10">
+    <div className="flex justify-center items-center  pt-1 bg-opacity-[11%] pb-10 mt-16">
       <div className="w-[90%] grid grid-cols-1 md:grid-cols-2 gap-10">
         {/* Left side (image) */}
         <div className="col-span-1 ">
@@ -55,6 +55,7 @@ const AboutusSection = ({ title, image, head, content}) => {
                   height={1800}
                 />
               </div>
+              
               <div className="mt-2 text-[#B82A26] font-[400]">
                 <h1>
                   15,000
@@ -64,7 +65,7 @@ const AboutusSection = ({ title, image, head, content}) => {
               </div>
             </div>
 
-            <Image src={image} height={600} width={600} className="mt-5" />
+            <Image src={image} height={600} width={600} className="mt-16 mb-16" />
             <div className="absolute bg-[#FEFEFF] z-10 text-center bottom-0 right-10 left-32">
               <div className="mt-2  flex justify-evenly">
                 <h1 className="text-[#B82A26] font-[600] text-[48px] ">18 <span className="text-[#3A7CBA] text-[16px]">PROJECTS</span></h1>
@@ -76,10 +77,12 @@ const AboutusSection = ({ title, image, head, content}) => {
         </div>
 
         {/* Right side (text) */}
-        <div className="col-span-1">
+        <div className="col-span-1 mt-16 mb-16">
           <div className="text-2xl text-[#3A7CBA]">
             {title}
-            <div className="bg-[#B82A26] h-[3px] w-36 mt-1 mb-5"></div>
+            <div className="text-center">
+            <div className="bg-[#B82A26] h-[3px] w-10 text-center mt-1 mb-5"></div>
+            </div>
           </div>
           <div className="text-[24px] text-[#3A7CBA] font-lightbold mb-5">{head}</div>
 
