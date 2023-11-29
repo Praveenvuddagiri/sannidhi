@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 
-const AminitesCard = ({ heading }) => {
+const LocationCard = ({ heading }) => {
     return (
         <div className="text-center ">
   
@@ -16,7 +16,7 @@ const AminitesCard = ({ heading }) => {
     );
 }
 
-export default AminitesCard;
+export default LocationCard;
 
 
 
