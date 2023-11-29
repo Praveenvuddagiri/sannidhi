@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectCard from './ProjectCard'
+import HomeProjectCard from './HomeProjectCard'
 
-const Projects = ({ title, projects }) => {
+const HomeProjects = ({ title, projects }) => {
 
     return (
         <div className='flex justify-center items-center mt-16 mb-16 w-full'>
@@ -11,8 +11,8 @@ const Projects = ({ title, projects }) => {
                     <div className='bg-[#B82A26] h-[3px] w-36 mt-1 mb-5'></div>
                     <div className='flex justify-between gap-5 mt-6 flex-col lg:flex-row'>
                         {
-                            projects.map((project, index) => (
-                                <ProjectCard key={index} image={project.image} title={project.title} />
+                            projects?.map((project, index) => (
+                                <HomeProjectCard key={index} image={project.image} title={project.title} />
                             ))
                         }
                     </div>
@@ -22,4 +22,4 @@ const Projects = ({ title, projects }) => {
     )
 }
 
-export default Projects
+export default HomeProjects

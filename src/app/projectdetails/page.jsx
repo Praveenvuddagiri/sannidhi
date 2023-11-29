@@ -1,7 +1,7 @@
 
 import HeaderCard from '@/Components/CommonComponents/HeaderCard'
 import Navbar from '@/Components/CommonComponents/Navbar'
-import OngoingProject from '@/Components/OngoingComponents/OngoingProject'
+import OngoingProject from '@/Components/OngoingComponents/Projects'
 import Footer from '@/Components/CommonComponents/Footer'
 import CtaButton from '@/Components/HomeComponents/CtaButton'
 import React from 'react'

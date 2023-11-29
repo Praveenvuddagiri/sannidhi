@@ -2,7 +2,6 @@
 import React from 'react'
 import Navbar from '@/Components/CommonComponents/Navbar'
 import HeroSection from '@/Components/HomeComponents/HeroSection';
-import Projects from '@/Components/HomeComponents/Projects';
 import VideoSection from '@/Components/HomeComponents/VideoSection';
 import CtaButton from '@/Components/HomeComponents/CtaButton';
 import Footer from '@/Components/CommonComponents/Footer';
@@ -10,6 +9,7 @@ import AboutUsCard from '@/Components/HomeComponents/AboutUsCard';
 import Testimonial from '@/Components/HomeComponents/Testomials';
 import HeaderCard from '@/Components/CommonComponents/HeaderCard';
 import AboutusSection from '@/Components/AboutusComponents/AboutusSection';
+import HomeProjects from '@/Components/HomeComponents/HomeProjects';
 
 
 
@@ -176,7 +176,7 @@ export default function Home() {
         buttonLabel={heroSectionData.button}
 
       />
-      <Projects projects={projectsProps.projects} title={projectsProps.title} />
+      <HomeProjects projects={projectsProps.projects} title={projectsProps.title} />
       <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
       <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
       <VideoSection

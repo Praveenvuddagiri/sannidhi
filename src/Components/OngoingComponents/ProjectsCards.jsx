@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 
 
-const CardComponent = ({ image, heading, description, button }) => {
+const ProjectsCard = ({ image, heading, description, button }) => {
   return (
     <div className="max-w-xs  overflow-hidden shadow-lg pt-4 pb-4 rounded-xl">
       <Image src={image} alt="Sunset in the mountains" width={500} height={100} />
@@ -24,4 +24,4 @@ const CardComponent = ({ image, heading, description, button }) => {
 
 
 
-export default CardComponent;
+export default ProjectsCard;

@@ -1,11 +1,12 @@
 
 import HeaderCard from '@/Components/CommonComponents/HeaderCard'
 import Navbar from '@/Components/CommonComponents/Navbar'
-import OngoingProject from '@/Components/OngoingComponents/OngoingProject'
+import OngoingProject from '@/Components/OngoingComponents/Projects'
 import Footer from '@/Components/CommonComponents/Footer'
 import CtaButton from '@/Components/HomeComponents/CtaButton'
 import React from 'react'
 import VideoSection from '@/Components/HomeComponents/VideoSection'
+import Projects from '@/Components/OngoingComponents/Projects'
 
 
 const navbarData = {
@@ -39,6 +40,84 @@ const VideoSectionData  =
   description: "Welcome to your dream home at Sannidhi Group, where elegance meets modern comfort. This stunning property redefines the art of sophisticated living",
   imageUrl2:"https://res.cloudinary.com/dagmm478n/image/upload/v1701080357/INA%20SANNIDI/Group_1000001835_hv6sae.svg",
 }
+const ProjectData = {
+  title: "Upcoming Projects",
+
+  data: [
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+    {
+      image:
+        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
+      heading: "Upcoming Projects",
+      description:
+        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
+      button: "Discover More",
+    },
+  ],
+};
 
 const Page = () => {
   return (
@@ -48,7 +127,7 @@ const Page = () => {
     heading={HeaderCardData.head}
     image={HeaderCardData.image}
     />
-      <OngoingProject/>
+      <Projects data={ProjectData.data} title={ProjectData.title} />
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}

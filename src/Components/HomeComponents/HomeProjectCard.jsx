@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-const ProjectCard = ({ image, title }) => {
+const HomeProjectCard = ({ image, title }) => {
   return (
     <div className="flex flex-col items-center bg-blue-100 bg-opacity-75 rounded-[30px] w-[400px] h-[300px] p-5 text-[#192839] font-semibold">
   <img
@@ -16,4 +16,4 @@ const ProjectCard = ({ image, title }) => {
   )
 }
 
-export default ProjectCard
+export default HomeProjectCard
