@@ -38,7 +38,7 @@ const Testimonial = ({ title, list }) => {
                 list?.map((testomialsCardData) =>
 
                   <SwiperSlide>
-                    <div className='m-10'>
+                    <div className=''>
 
                       <CardComponent
                         image={testomialsCardData.image}

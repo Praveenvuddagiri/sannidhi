@@ -1,5 +1,5 @@
 import React from 'react';
-import Overviewcard from './Overviewcard';
+import AminitesCard from './AminitesCard';
 
 
 const AminitiesProject = () => {
@@ -19,12 +19,10 @@ const AminitiesProject = () => {
 
             <div className='flex flex-wrap gap-4 justify-center'>
                 {
-                    OverviewProjectData.map((item) => {
+                    AminitiesProjectData.map((item) => {
                         return (
-                            <Overviewcard
+                            <AminitesCard
                                 heading={item.heading}
-                                description={item.description}
-                                button={item.button}
 
                             />
                         )
