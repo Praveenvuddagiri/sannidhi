@@ -13,7 +13,7 @@ const HeaderCard = ({
             <Image
               src={image}
               alt="Hero Image"
-              className="w-full h-full object-fill"
+              className="w-full h-full"
               width={700}
               height={700}
             />

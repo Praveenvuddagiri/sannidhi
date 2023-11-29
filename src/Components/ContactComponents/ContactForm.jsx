@@ -1,15 +1,14 @@
-'use client'
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    floatingEmail: '',
-    floatingPassword: '',
-    repeatPassword: '',
-    floatingFirstName: '',
-    floatingLastName: '',
-    floatingPhone: '',
-    floatingCompany: '',
+    contactName: "",
+    contactPhone: "",
+    city: "",
+    postCode: "",
+    email: "",
+    tellUsAbout: "",
   });
 
   const handleInputChange = (e) => {
@@ -22,53 +21,130 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    console.log('Form Submitted:', formData);
-    
+
+    console.log("Form Submitted:", formData);
+    // Add your form submission logic here, e.g., send data to backend
+
+    // Reset form fields after submission
+    setFormData({
+      contactName: "",
+      contactPhone: "",
+      city: "",
+      postCode: "",
+      email: "",
+      tellUsAbout: "",
+    });
   };
 
   return (
-    <div className="max-w-2xl mx-auto">
-      <form onSubmit={handleSubmit}>
-        {/* Input fields */}
-        {/* Use value and onChange to bind form fields to state */}
-        {/* Example for one input field */}
-        <div className="relative z-0 mb-6 w-full group">
+    <div className="max-w-lg">
+      <div className="mb-4">
+      <h1 className="text-lg mb-1">Need Help ? </h1>
+      <h1 className='text-3xl font-semibold'>Get in Touch</h1>
+      </div>
+    
+      <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-2">
+        <div className="mb-1 col-span-2">
+          <label
+            htmlFor="contactName"
+            className="block text-sm font-medium"
+          >
+            Contact Name
+          </label>
           <input
-            type="email"
-            name="floatingEmail"
-            value={formData.floatingEmail}
+            type="text"
+            name="contactName"
+            value={formData.contactName}
             onChange={handleInputChange}
-            className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-            placeholder=" "
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
             required
           />
-          <label
-            htmlFor="floatingEmail"
-            className="absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-          >
-            Email address
-          </label>
         </div>
-        {/* ... Repeat this structure for other input fields ... */}
-        
-        {/* Submit button */}
+
+       
+
+        <div className="mb-2">
+          <label htmlFor="city" className="block text-sm font-medium">
+            City
+          </label>
+          <input
+            type="text"
+            name="city"
+            value={formData.city}
+            onChange={handleInputChange}
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+          />
+        </div>
+
+        <div className="mb-2">
+          <label htmlFor="postCode" className="block text-sm font-medium">
+            Post Code
+          </label>
+          <input
+            type="text"
+            name="postCode"
+            value={formData.postCode}
+            onChange={handleInputChange}
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+          />
+        </div>
+        <div className="mb-2 col-span-2">
+          <label
+            htmlFor="contactPhone"
+            className="block text-sm font-medium"
+          >
+            Contact Phone
+          </label>
+          <input
+            type="text"
+            name="contactPhone"
+            value={formData.contactPhone}
+            onChange={handleInputChange}
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+          />
+        </div>
+
+        <div className="mb-2 col-span-2">
+          <label htmlFor="email" className="block text-sm font-medium">
+            Email
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            required
+          />
+        </div>
+
+        <div className="mb-2 col-span-2">
+          <label
+            htmlFor="tellUsAbout"
+            className="block text-sm font-medium"
+          >
+            Tell us about
+          </label>
+          <textarea
+            name="tellUsAbout"
+            value={formData.tellUsAbout}
+            onChange={handleInputChange}
+            className="block py-1 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            rows="2"
+            required
+          ></textarea>
+        </div>
+
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="text-white bg-[#B82A26] hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-[14px] w-full sm:w-auto px-5 py-1 text-center"
         >
-          Submit
+          SEND MESSAGE
         </button>
       </form>
-
-      {/* Additional content */}
-      <p className="mt-5">
-        Check out the original floating label form elements on{' '}
-        <a className="text-blue-600 hover:underline" href="#" target="_blank">
-          Flowbite
-        </a>{' '}
-        and browse other similar components built with Tailwind CSS.
-      </p>
     </div>
   );
 };
