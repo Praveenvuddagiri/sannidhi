@@ -70,7 +70,7 @@ const page = () => {
       />
        
       <GalleryProject/>
-      <LocationProject/>
+      <LocationProject data={LocationProjectData}/>
     
       <VideoSection
         image={VideoSectionData.imageUrl}
