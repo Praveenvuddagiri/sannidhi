@@ -107,15 +107,7 @@ const ProjectData = {
       description:
         "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
       button: "Discover More",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
-      heading: "Ongoing Projects",
-      description:
-        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
-      button: "Discover More",
-    },
+    }
   ],
 };
 

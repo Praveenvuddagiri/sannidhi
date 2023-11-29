@@ -16,7 +16,7 @@ module.exports = {
         'dark': '#011A41',
       },
       fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
+        'inter': ['Inter', 'sans-serif','MonteCarlo','Monsieur La Doulaise'],
       },
     },
   },

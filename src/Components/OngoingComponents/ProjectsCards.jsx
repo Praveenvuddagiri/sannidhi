@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -13,9 +14,11 @@ const ProjectsCard = ({ image, heading, description, button }) => {
         </p>
       </div>
       <div className="flex justify-center items-center px-6 pt-2 pb-2">
+        <Link href="/projectdetails">
         <button className="bg-[#3A7CBA] rounded-lg px-4 py-2 text-white font-semibold text-sm mr-2 mb-2">
           {button}
-        </button>
+        </button></Link>
+        
       </div>
     </div>
   );

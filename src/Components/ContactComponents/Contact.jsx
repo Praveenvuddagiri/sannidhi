@@ -14,7 +14,7 @@ const Contact = () => {
      
         ></iframe>
       </div>
-      <div className="absolute z-10 bg-white top-[35%] left-[11%] rounded-2xl">
+      <div className="absolute z-10 bg-white top-[30%] left-[20%] rounded-2xl">
         <GetInTouch />
       </div>
     </div>

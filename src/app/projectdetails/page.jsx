@@ -49,6 +49,12 @@ const overviewData =
     title: "",
     description: "",
 }
+const LocationProjectData = {
+  heading: "Location",
+  mapSrc: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15222.588872610337!2d78.3835117!3d17.4765913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9229daaaaaab%3A0x2d54efef3ed529b9!2sSannidhi%20Group!5e0!3m2!1sen!2sin!4v1701245050924!5m2!1sen!2sin",
+};
+
+
 const page = () => {
   return (
     <div>
@@ -62,7 +68,7 @@ const page = () => {
    <AminitesProject
       />
       <GalleryProject/>
-      <LocationProject/>
+      <LocationProject data={LocationProjectData}/>
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}

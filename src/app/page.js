@@ -10,6 +10,7 @@ import Testimonial from '@/Components/HomeComponents/Testomials';
 import HeaderCard from '@/Components/CommonComponents/HeaderCard';
 import AboutusSection from '@/Components/AboutusComponents/AboutusSection';
 import HomeProjects from '@/Components/HomeComponents/HomeProjects';
+import TestimonialsCarousel from '@/Components/TestTestimonial';
 
 
 
@@ -179,6 +180,7 @@ export default function Home() {
       <HomeProjects projects={projectsProps.projects} title={projectsProps.title} />
       <AboutUsCard title={aboutProps.title} image={aboutProps.image} list={aboutProps.list} head={aboutProps.head} content={aboutProps.content} />
       <Testimonial title={testomialsCardData.title} list={testomialsCardData.list} />
+      <TestimonialsCarousel/>
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}

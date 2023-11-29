@@ -1,7 +1,6 @@
 
 import HeaderCard from '@/Components/CommonComponents/HeaderCard'
 import Navbar from '@/Components/CommonComponents/Navbar'
-import OngoingProject from '@/Components/OngoingComponents/Projects'
 import Footer from '@/Components/CommonComponents/Footer'
 import CtaButton from '@/Components/HomeComponents/CtaButton'
 import React from 'react'
@@ -15,7 +14,7 @@ const navbarData = {
     { url: '/', text: 'Home' },
     { url: '/about', text: 'About' },
     { url: '/ongoing', text: 'Ongoing' },
-    { url: '/Completed', text: 'Completed' },
+    { url: '/upcoming', text: 'Upcoming' },
     { url: '/completed', text: 'Completed' }
 
   ]
@@ -108,15 +107,7 @@ const ProjectData = {
       description:
         "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
       button: "Discover More",
-    },
-    {
-      image:
-        "https://res.cloudinary.com/dagmm478n/image/upload/v1701155051/INA%20SANNIDI/14b800e5bdbd38e838ff76d9b76b7a7f_yv1i3i.png",
-      heading: "Completed Projects",
-      description:
-        "Prime metropolis plots, cherishing each client in Sannidhi's Happy Community, fueling constant expansion.",
-      button: "Discover More",
-    },
+    }
   ],
 };
 
