@@ -1,5 +1,6 @@
 import React from 'react';
 import AminitesCard from './AminitesCard';
+import CarouselCard from '../SwiperCarousl/CarouslCard';
 
 
 const AminitesProject = () => {
@@ -17,14 +18,14 @@ const AminitesProject = () => {
             </div>
 
             <div className='flex flex-wrap gap-4 justify-center'>
-                {
-
+                
+               
                     <AminitesCard
                         heading={AminitesProjectData.heading}
 
                     />
-
-                }
+                    <CarouselCard/>
+               
 
             </div>
         </div>

@@ -10,6 +10,7 @@ import OverviewProject from '@/Components/OverviewComponents/OverviewProject'
 import AminitesProject from '@/Components/AminitesComponents/AminitesProject'
 import GalleryProject from '@/Components/GalleryComponents/galleryProject'
 import LocationProject from '@/Components/LocationComponents/LocationProject'
+import CarouselCard from '@/Components/SwiperCarousl/CarouslCard'
 
 
 const navbarData = {
@@ -67,8 +68,10 @@ const page = () => {
     <OverviewProject/>
    <AminitesProject
       />
+       
       <GalleryProject/>
-      <LocationProject data={LocationProjectData}/>
+      <LocationProject/>
+    
       <VideoSection
         image={VideoSectionData.imageUrl}
         title={VideoSectionData.title}

@@ -1,5 +1,6 @@
 import React from 'react';
 import GalleryCard from './GalleryCard';
+import CarouselCard from '../SwiperCarousl/CarouslCard';
 
 
 const GalleryProject = () => {
@@ -17,14 +18,13 @@ const GalleryProject = () => {
             </div>
 
             <div className='flex flex-wrap gap-4 justify-center'>
-                {
+                
 
                     <GalleryCard
                         heading={GalleryProjectData.heading}
 
                     />
-
-                }
+                   <CarouselCard/>
 
             </div>
         </div>
