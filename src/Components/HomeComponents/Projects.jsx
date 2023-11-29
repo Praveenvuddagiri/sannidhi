@@ -9,8 +9,6 @@ const Projects = ({ title, projects }) => {
                 <div className='flex flex-col justify-center items-center '>
                     <h2 className='text-4xl text-[#3A7CBA]'>{title}</h2>
                     <div className='bg-[#B82A26] h-[3px] w-36 mt-1 mb-5'></div>
-
-
                     <div className='flex justify-between gap-5 mt-6 flex-col lg:flex-row'>
                         {
                             projects.map((project, index) => (

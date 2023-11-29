@@ -5,15 +5,15 @@ const CardComponent = ({ image, content, name, position }) => {
     <div>
       <div className="flex items-center justify-center">
         <div className="relative flex w-full max-w-[54rem] flex-row rounded-xl bg-clip-border text-gray-700 shadow-md bg-[#F1F1F1] p-4">
-          <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+          {/* <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
             <img
               src={image}
               alt="image"
               className="h-full w-full object-cover rounded-xl"
             />
-          </div>
+          </div> */}
           <div className="p-6">
-            <div className="flex justify-end items-end mb-3">
+            {/* <div className="flex justify-end items-end mb-3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -28,9 +28,9 @@ const CardComponent = ({ image, content, name, position }) => {
                 className="text-end"
               />
             </svg>
-            </div>
+            </div> */}
             
-            <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-[#495783] antialiased">
+            <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-[#495783] antialiased text-xs">
               {content}
             </p>
             <h6 className="block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-[#202020] antialiased">
