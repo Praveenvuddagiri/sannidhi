@@ -21,7 +21,7 @@ const navbarData = {
 }
 const HeaderCardData = {
   head: "Ongoing Projects",
-  image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701087786/INA%20SANNIDI/cd93630f24a63cb69f550cae5613ad9e_gaxe30.png",
+  image: "https://res.cloudinary.com/dagmm478n/image/upload/v1701167272/INA%20SANNIDI/4a1d841d0499a417231c1db0a6b27d35_tgxl1d.png",
 }
 
 const CtaButtonData =

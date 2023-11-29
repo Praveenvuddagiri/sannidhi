@@ -66,7 +66,7 @@ const AboutusSection = ({ title, image, head, content}) => {
             </div>
 
             <Image src={image} height={600} width={600} className="mt-16 mb-16" />
-            <div className="absolute bg-[#FEFEFF] z-10 text-center bottom-0 right-10 left-32">
+            <div className="absolute bg-[#FEFEFF] z-10 text-center bottom-10 right-10 left-32">
               <div className="mt-2  flex justify-evenly">
                 <h1 className="text-[#B82A26] font-[600] text-[48px] ">18 <span className="text-[#3A7CBA] text-[16px]">PROJECTS</span></h1>
                 <h1 className="text-[#B82A26] font-[600] text-[48px]">1,800 <span className="text-[#3A7CBA] text-[16px]">ACRES</span></h1>
