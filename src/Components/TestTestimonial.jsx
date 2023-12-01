@@ -49,7 +49,7 @@ const TestimonialsCarousel = () => {
 
   return (
     <div className="gtco-testimonials bg-aliceblue mt-10 px-4 md:px-0">
-      <h2 className="text-center text-3xl text-gray-700 mb-10">Testimonials Carousel - Cards Comments</h2>
+      <h2 className="text-center text-3xl text-gray-700 mb-10"></h2>
       <div className="owl-carousel owl-carousel1 owl-theme">
         {/* Testimonial cards go here */}
         {/* For each testimonial, create a similar card structure */}

@@ -5,8 +5,8 @@ import React from "react";
 const VideoSection = ({ image, image2, title, heading, description, onButtonClick, buttonLabel }) => {
   return (
     <div className="relative">
-    <div className="flex flex-col items-center justify-center h-[700px]"> {/* Adjusted height in pixels */}
-      <div className="w-full h-[600px] object-cover relative opacity-100"> {/* Adjusted height in pixels */}
+    <div className="flex flex-col items-center justify-center h-[700px]"> 
+      <div className="w-full h-[600px] object-cover relative opacity-100">
         <Image
           src={image}
           alt="Hero Image"
